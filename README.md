@@ -1,248 +1,274 @@
-# SubHub - Subscription Management Platform
+<p align="center">
+  <img src="assets/img/favicon_io/android-chrome-192x192.png" alt="SubHub Logo" width="80" height="80">
+</p>
 
-SubHub is a modern subscription management platform built with PHP, MySQL, and Bootstrap. It allows users to browse, compare, and subscribe to various digital services and subscriptions — all in one centralized hub. Perfect for managing streaming services, software licenses, cloud storage, and more.
+<h1 align="center">SubHub</h1>
 
-## 🚀 Technologies Used
+<p align="center">
+  <strong>Your One-Stop Subscription Management Platform</strong>
+</p>
 
-- **PHP 7.4+** - Server-side scripting for backend logic and database interactions
-- **MySQL/MariaDB** - Relational database for storing subscriptions, customers, and orders
-- **Bootstrap 5** - Responsive CSS framework for modern UI design
-- **jQuery** - JavaScript library for enhanced interactivity
+<p align="center">
+  <a href="https://subhub-yt7c.onrender.com">🌐 Live Demo</a> •
+  <a href="#features">✨ Features</a> •
+  <a href="#installation">🛠️ Installation</a> •
+  <a href="#deployment">☁️ Deployment</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.1-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/MySQL-TiDB-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/Render-Deployed-46E3B7?style=for-the-badge&logo=render&logoColor=white" alt="Render">
+</p>
+
+---
+
+## 🌟 Overview
+
+**SubHub** is a modern subscription management platform that allows users to browse, compare, and subscribe to various digital services — all in one centralized hub. Perfect for managing streaming services, software licenses, cloud storage subscriptions, and more.
+
+### 🔗 Live Demo
+
+| Link                                                                          | Description                     |
+| ----------------------------------------------------------------------------- | ------------------------------- |
+| [**subhub-yt7c.onrender.com**](https://subhub-yt7c.onrender.com)              | Frontend - Browse subscriptions |
+| [**subhub-yt7c.onrender.com/admin**](https://subhub-yt7c.onrender.com/admin/) | Admin Panel - Manage everything |
+
+**Demo Admin Login:**
+
+- Username: `admin`
+- Password: `123`
+
+---
 
 ## ✨ Features
 
-### User Features
+### 👤 User Features
 
-- **Subscription Catalog** - Browse available subscriptions organized by category (Streaming, Software, Cloud Storage, etc.)
-- **Billing Cycles** - Support for monthly, yearly, and one-time payment plans
-- **Multi-Currency Support** - Prices displayed in USD, MAD, and more
-- **Guest Checkout** - Subscribe without account registration
-- **Order Tracking** - Track subscription orders with unique order numbers
-- **Search Functionality** - Find subscriptions quickly
-- **Contact Form** - Get in touch with support
-- **FAQ Section** - Common questions answered
-- **Multi-Language Support** - Available in English and Arabic
+| Feature                     | Description                                                          |
+| --------------------------- | -------------------------------------------------------------------- |
+| 📦 **Subscription Catalog** | Browse subscriptions by category (Streaming, Software, Design, etc.) |
+| 💳 **Flexible Billing**     | Support for monthly, yearly, and one-time payments                   |
+| 💰 **Multi-Currency**       | Prices in USD, MAD, and more                                         |
+| 🛒 **Guest Checkout**       | Purchase without registration                                        |
+| 📍 **Order Tracking**       | Track orders with unique order numbers                               |
+| 🔍 **Smart Search**         | Find subscriptions quickly                                           |
+| 📧 **Contact Form**         | Get in touch with support                                            |
+| ❓ **FAQ Section**          | Common questions answered                                            |
+| 🌐 **Multi-Language**       | English & Arabic support                                             |
 
-### Admin Panel
+### 👨‍💼 Admin Panel
 
-- **Dashboard** - Overview of orders, customers, and products
-- **Product Management** - Add, edit, and delete subscription products
-- **Customer Management** - View and manage customer information
-- **Order Management** - Process and track subscription orders
-- **Profile Settings** - Update admin account details
+| Feature                    | Description                                |
+| -------------------------- | ------------------------------------------ |
+| 📊 **Dashboard**           | Overview of orders, customers, and revenue |
+| 📝 **Product Management**  | Add, edit, delete subscription products    |
+| 👥 **Customer Management** | View and manage customer data              |
+| 📋 **Order Management**    | Process and track all orders               |
+| ⚙️ **Profile Settings**    | Update admin credentials                   |
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology                                                                                            | Purpose                 |
+| ----------------------------------------------------------------------------------------------------- | ----------------------- |
+| ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)                   | Backend logic & API     |
+| ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)             | Database (TiDB Cloud)   |
+| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat&logo=bootstrap&logoColor=white) | Responsive UI framework |
+| ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=flat&logo=jquery&logoColor=white)          | JavaScript interactions |
+| ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)          | Containerization        |
+| ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white)          | Cloud hosting           |
+
+---
 
 ## 📁 Project Structure
 
 ```
 SubHub/
-├── index.php           # Home page with subscription catalog
-├── product.php         # Individual subscription details
-├── cart.php            # Shopping cart
-├── search.php          # Search subscriptions
-├── tracking.php        # Order tracking
-├── contact.php         # Contact form
-├── faq.php             # FAQ page
-├── admin/              # Admin panel
-│   ├── dashboard.php
-│   ├── edit-products.php
-│   ├── edit-customers.php
-│   └── edit-orders.php
-├── assets/             # CSS, JS, images
-├── db/                 # Database SQL file
-├── inc/                # Includes (functions, arrays, languages)
-├── templates/          # Header, footer, navbar
-└── uploads/            # Uploaded product images
+├── 📄 index.php            # Home page - subscription catalog
+├── 📄 product.php          # Product details page
+├── 📄 cart.php             # Shopping cart
+├── 📄 search.php           # Search functionality
+├── 📄 tracking.php         # Order tracking
+├── 📄 contact.php          # Contact form
+├── 📄 faq.php              # FAQ page
+├── 📄 connect.php          # Database connection
+├── 📄 Dockerfile           # Docker configuration
+├── 📄 render.yaml          # Render deployment config
+│
+├── 📂 admin/               # Admin panel
+│   ├── dashboard.php       # Admin dashboard
+│   ├── edit-products.php   # Manage products
+│   ├── edit-customers.php  # Manage customers
+│   ├── edit-orders.php     # Manage orders
+│   └── edit-profile.php    # Admin profile
+│
+├── 📂 assets/              # Static assets
+│   ├── css/                # Stylesheets
+│   ├── js/                 # JavaScript files
+│   └── img/                # Images
+│
+├── 📂 db/                  # Database
+│   └── a_store.sql         # SQL schema & data
+│
+├── 📂 inc/                 # Includes
+│   ├── functions/          # PHP functions
+│   ├── arrays/             # Data arrays
+│   └── languages/          # Translations (en, ar)
+│
+├── 📂 templates/           # Reusable templates
+│   ├── header.php
+│   ├── footer.php
+│   └── navbar.php
+│
+└── 📂 uploads/             # Product images
 ```
 
-## 🛠️ Getting Started
+---
+
+## 🚀 Installation
 
 ### Prerequisites
 
-- PHP 7.4 or higher
-- MySQL 5.7+ or MariaDB 10.4+
-- Web server (Apache/Nginx) or XAMPP/WAMP/MAMP
+- PHP 7.4+
+- MySQL 5.7+ / MariaDB 10.4+ / TiDB
+- Apache/Nginx or XAMPP/WAMP/MAMP
 
-### Installation
+### Local Setup
 
 1. **Clone the repository**
 
    ```bash
    git clone https://github.com/santhosh8919/SubHub.git
+   cd SubHub
    ```
 
-2. **Set up the database**
-   - Create a new database named `a_store`
-   - Import the SQL file: `db/a_store.sql`
+2. **Import database**
 
-3. **Configure database connection**
-   - Update credentials in `connect.php` and `admin/connect.php`
-
-4. **Create contacts table** (if not present)
-
-   ```sql
-   CREATE TABLE `contacts` (
-     `id` int(11) NOT NULL AUTO_INCREMENT,
-     `name` text NOT NULL,
-     `email` varchar(255) NOT NULL,
-     `subject` text NOT NULL DEFAULT 'none',
-     `message` text NOT NULL,
-     `created_c` timestamp NOT NULL DEFAULT current_timestamp(),
-     PRIMARY KEY (`id`)
-   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+   ```bash
+   mysql -u root -p test < db/a_store.sql
    ```
 
-5. **Access the application**
-   - Frontend: `http://localhost/SubHub/`
-   - Admin Panel: `http://localhost/SubHub/admin/`
+3. **Configure database** in `connect.php`:
 
-### Default Admin Credentials
+   ```php
+   $host = 'localhost';
+   $dbname = 'test';
+   $user = 'root';
+   $pass = 'your_password';
+   ```
 
-- **Username:** `admin`
-- **Password:** `password`
+4. **Start local server**
+
+   ```bash
+   php -S localhost:8000
+   ```
+
+5. **Access the app**
+   - Frontend: http://localhost:8000
+   - Admin: http://localhost:8000/admin/
+
+---
+
+## ☁️ Deployment
+
+### Deploy on Render (Recommended)
+
+1. **Fork this repository** to your GitHub
+
+2. **Create TiDB Cloud database** (free):
+   - Go to [tidbcloud.com](https://tidbcloud.com)
+   - Create Serverless cluster
+   - Import `db/a_store.sql`
+
+3. **Deploy on Render**:
+   - Go to [render.com](https://render.com)
+   - New → Web Service → Connect GitHub repo
+   - Runtime: `Docker`
+   - Add environment variables:
+
+   | Variable  | Value              |
+   | --------- | ------------------ |
+   | `DB_HOST` | Your TiDB host     |
+   | `DB_PORT` | `4000`             |
+   | `DB_NAME` | `test`             |
+   | `DB_USER` | Your TiDB username |
+   | `DB_PASS` | Your TiDB password |
+
+4. **Deploy!** 🚀
+
+---
 
 ## 📊 Database Schema
 
-| Table        | Description                 |
-| ------------ | --------------------------- |
-| `admin`      | Admin user accounts         |
-| `products`   | Subscription products/plans |
-| `customers`  | Customer information        |
-| `orders`     | Subscription orders         |
-| `currencies` | Supported currencies        |
-| `contacts`   | Contact form submissions    |
+| Table        | Description              |
+| ------------ | ------------------------ |
+| `admin`      | Admin user accounts      |
+| `products`   | Subscription products    |
+| `customers`  | Customer information     |
+| `orders`     | Order records            |
+| `currencies` | Supported currencies     |
+| `status`     | Order status types       |
+| `contacts`   | Contact form submissions |
 
-## 🌐 Supported Categories
+---
 
-- Streaming Services (Netflix, Spotify, etc.)
-- Software Licenses
-- Cloud Storage
-- Productivity Tools
-- And more...
+## 🔐 Default Credentials
 
-## ☁️ Deploy on Render
+| Role  | Username | Password |
+| ----- | -------- | -------- |
+| Admin | `admin`  | `123`    |
 
-### Step 1: Prepare Your Repository
+> ⚠️ **Security:** Change the default password after first login!
 
-1. Push your SubHub code to GitHub/GitLab
-2. Make sure `connect.php` uses environment variables:
+---
 
-   ```php
-   <?php
-   $host = getenv('DB_HOST') ?: 'localhost';
-   $dbname = getenv('DB_NAME') ?: 'a_store';
-   $user = getenv('DB_USER') ?: 'root';
-   $pass = getenv('DB_PASS') ?: '';
+## 📸 Screenshots
 
-   $con = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
-   ```
+### Home Page
 
-### Step 2: Create MySQL Database
+Browse subscription catalog with categories and pricing
 
-Render doesn't offer MySQL directly. Use one of these options:
+### Admin Dashboard
 
-| Service          | Free Tier       | Link                                         |
-| ---------------- | --------------- | -------------------------------------------- |
-| **PlanetScale**  | 5GB free        | [planetscale.com](https://planetscale.com)   |
-| **Railway**      | $5 credit/month | [railway.app](https://railway.app)           |
-| **Clever Cloud** | Free tier       | [clever-cloud.com](https://clever-cloud.com) |
-| **TiDB Cloud**   | 5GB free        | [tidbcloud.com](https://tidbcloud.com)       |
+Manage products, orders, and customers
 
-1. Create an account on your chosen service
-2. Create a new MySQL database
-3. Import `db/a_store.sql` using their console or MySQL client
-4. Copy the connection credentials (host, database, username, password)
+### Product Details
 
-### Step 3: Deploy PHP App on Render
+View subscription details and add to cart
 
-1. **Go to [render.com](https://render.com)** and sign up/login
+---
 
-2. **Create a New Web Service**
-   - Click **"New +"** → **"Web Service"**
-   - Connect your GitHub/GitLab repository
+## 🤝 Contributing
 
-3. **Configure the Service**
-   | Setting | Value |
-   |---------|-------|
-   | **Name** | `subhub` |
-   | **Runtime** | `Docker` |
-   | **Branch** | `main` |
-   | **Root Directory** | Leave empty (or your project folder) |
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-4. **Add Environment Variables**
-   Click **"Environment"** and add:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-   ```
-   DB_HOST=your-database-host.com
-   DB_NAME=a_store
-   DB_USER=your_username
-   DB_PASS=your_password
-   ```
-
-5. **Create a Dockerfile** in your project root:
-
-   ```dockerfile
-   FROM php:8.1-apache
-
-   # Install PHP extensions
-   RUN docker-php-ext-install pdo pdo_mysql
-
-   # Enable Apache mod_rewrite
-   RUN a2enmod rewrite
-
-   # Copy project files
-   COPY . /var/www/html/
-
-   # Set permissions
-   RUN chown -R www-data:www-data /var/www/html/uploads
-   RUN chmod -R 755 /var/www/html/uploads
-
-   # Expose port
-   EXPOSE 80
-
-   # Apache config for Render
-   RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
-   ```
-
-6. **Click "Create Web Service"**
-
-### Step 4: Access Your App
-
-After deployment completes:
-
-- **Frontend:** `https://subhub.onrender.com`
-- **Admin Panel:** `https://subhub.onrender.com/admin/`
-
-### Alternative: Deploy with render.yaml
-
-Create a `render.yaml` file in your project root:
-
-```yaml
-services:
-  - type: web
-    name: subhub
-    runtime: docker
-    envVars:
-      - key: DB_HOST
-        sync: false
-      - key: DB_NAME
-        sync: false
-      - key: DB_USER
-        sync: false
-      - key: DB_PASS
-        sync: false
-```
-
-### 💡 Tips
-
-- **Free tier** spins down after 15 mins of inactivity (cold starts)
-- Use **Starter plan ($7/mo)** for always-on service
-- Set up **health checks** at `/index.php`
-- Configure **custom domain** in Render dashboard
+---
 
 ## 📝 License
 
-This project is open source and available for educational purposes.
+This project is open source and available under the [MIT License](LICENSE).
 
-## 📧 Contact
+---
 
-For questions or feedback, feel free to reach out!
+## 👨‍💻 Author
+
+**Santhosh**
+
+- GitHub: [@santhosh8919](https://github.com/santhosh8919)
+
+---
+
+
+
+<p align="center">
+  <a href="https://subhub-yt7c.onrender.com">🌐 Visit Live Site</a>
+</p>
